@@ -1,0 +1,116 @@
+unit Main;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Menus,
+  FMX.Edit, FMX.StdCtrls, FMX.Controls.Presentation, FMX.Layouts, FMX.Objects,
+  FMX.ListBox;
+
+type
+  TInicio = class(TForm)
+    Background: TRectangle;
+    LayFundo: TLayout;
+    Topo: TLayout;
+    Meio: TLayout;
+    Footer: TLayout;
+    Titulo: TLabel;
+    btnPlay: TSpeedButton;
+    LayInterno: TLayout;
+    LayEsq: TLayout;
+    LayDir: TLayout;
+    EditMinutos: TEdit;
+    ComboBox1: TComboBox;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxItem3: TListBoxItem;
+    ListBoxItem4: TListBoxItem;
+    ListBoxItem5: TListBoxItem;
+    ListBoxItem6: TListBoxItem;
+    ListBoxItem7: TListBoxItem;
+    ListBoxItem8: TListBoxItem;
+    ComboBox2: TComboBox;
+    optPomodoro: TListBoxItem;
+    optRelaxar: TListBoxItem;
+    optMeditar: TListBoxItem;
+    btnSair: TSpeedButton;
+    ComboBox3: TComboBox;
+    optSilencio: TListBoxItem;
+    optPadrao: TListBoxItem;
+    Label1: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    procedure btnSairClick(Sender: TObject);
+    procedure btnPlayClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Inicio: TInicio;
+
+
+implementation
+
+{$R *.fmx}
+
+uses Contador;
+
+procedure TInicio.btnPlayClick(Sender: TObject);
+var  Principal: TContagem;
+Minutos: Integer;
+begin
+
+  Principal := TContagem.Create(Self);
+
+   if TryStrToInt(EditMinutos.Text, Minutos) and (Minutos > 1) and (Minutos < 640) then
+   begin
+       Minutos := Minutos -1;
+       Principal.LabelTimerMinuto.Text := IntToStr(Minutos);
+
+
+       Principal.Gato :=  ComboBox1.Selected.Text;
+
+       if (ComboBox2.Selected.Text = 'Pomodoro') then
+       begin
+            Principal.Tipo := 1;
+       end;
+       if (ComboBox2.Selected.Text = 'Meditação') then
+       begin
+            Principal.Tipo := 2;
+       end;
+       if (ComboBox2.Selected.Text = 'Relaxar') then
+       begin
+            Principal.Tipo := 3;
+       end;
+
+
+       Principal.Show;
+   end
+  else
+  begin
+    // Exibe uma mensagem de erro caso o valor não seja um número válido ou esteja fora do intervalo
+    ShowMessage('Por favor, insira um valor numérico entre 2 e 639.');
+  end;
+
+
+
+  // Exibe o formulário TContagem
+
+end;
+
+procedure TInicio.btnSairClick(Sender: TObject);
+begin
+        Application.Terminate;
+end;
+
+procedure TInicio.FormShow(Sender: TObject);
+begin
+  ComboBox1.Selected.Text := 'Gato1';
+end;
+
+end.

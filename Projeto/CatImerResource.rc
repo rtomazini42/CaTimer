@@ -1,0 +1,6 @@
+PngImage_1 RCDATA "..\\Assets\\Icons\\config.png"
+PngImage_2 RCDATA "..\\Assets\\Icons\\pause.png"
+PngImage_3 RCDATA "..\\Assets\\Icons\\play.png"
+PngImage_4 RCDATA "..\\Assets\\Icons\\sair.png"
+PngImage_5 RCDATA "..\\Assets\\Icons\\sound.png"
+PngImage_6 RCDATA "..\\Assets\\Icons\\sound_off.png"

@@ -1,0 +1,288 @@
+object Inicio: TInicio
+  Left = 0
+  Top = 0
+  Caption = 'CaTimer'
+  ClientHeight = 720
+  ClientWidth = 480
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Background: TRectangle
+    Align = Client
+    Fill.Kind = Gradient
+    Fill.Gradient.Points = <
+      item
+        Color = claLightskyblue
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = claLightblue
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StartPosition.X = 0.500000000000000000
+    Fill.Gradient.StartPosition.Y = 1.000000000000000000
+    Fill.Gradient.StopPosition.X = 0.499999970197677600
+    Fill.Gradient.StopPosition.Y = 0.000000000000000000
+    Locked = True
+    Size.Width = 480.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LayFundo: TLayout
+    Align = Client
+    Size.Width = 480.000000000000000000
+    Size.Height = 720.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Topo: TLayout
+      Align = Top
+      Size.Width = 480.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Titulo: TLabel
+        Align = Center
+        StyledSettings = [Style]
+        Size.Width = 256.000000000000000000
+        Size.Height = 85.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Anja Eliane Nornal'
+        TextSettings.Font.Size = 48.000000000000000000
+        TextSettings.HorzAlign = Center
+        Text = 'CaTimer'
+        TabOrder = 0
+      end
+    end
+    object Meio: TLayout
+      Align = Client
+      Size.Width = 480.000000000000000000
+      Size.Height = 495.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object btnPlay: TSpeedButton
+        Align = Bottom
+        StyledSettings = [Style]
+        Position.Y = 447.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'INICIAR'
+        TextSettings.Font.Family = 'Anja Eliane Nornal'
+        TextSettings.Font.Size = 36.000000000000000000
+        TextSettings.FontColor = claWhite
+      end
+      object LayInterno: TLayout
+        Align = Client
+        Size.Width = 480.000000000000000000
+        Size.Height = 447.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object LayEsq: TLayout
+          Align = Left
+          Size.Width = 241.000000000000000000
+          Size.Height = 447.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label1: TLabel
+            Align = Top
+            StyledSettings = []
+            Margins.Left = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Size.Width = 231.000000000000000000
+            Size.Height = 39.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Calibri'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claDarkslategray
+            TextSettings.HorzAlign = Center
+            Text = 'Tempo em minutos'
+            TabOrder = 3
+          end
+          object TLabel
+            Align = Top
+            StyledSettings = []
+            Margins.Left = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 137.000000000000000000
+            Size.Width = 231.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Calibri'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claDarkslategray
+            TextSettings.HorzAlign = Center
+            Text = 'Som'
+            TabOrder = 2
+          end
+          object Label3: TLabel
+            Align = Top
+            StyledSettings = []
+            Margins.Left = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 91.000000000000000000
+            Size.Width = 231.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Calibri'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claDarkslategray
+            TextSettings.HorzAlign = Center
+            Text = 'Tipo'
+            TabOrder = 1
+          end
+          object Label4: TLabel
+            Align = Top
+            StyledSettings = []
+            Margins.Left = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 49.000000000000000000
+            Size.Width = 231.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Calibri'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claDarkslategray
+            TextSettings.HorzAlign = Center
+            Text = 'Gato'
+            TabOrder = 0
+          end
+        end
+        object LayDir: TLayout
+          Align = Right
+          Position.X = 258.000000000000000000
+          Size.Width = 222.000000000000000000
+          Size.Height = 447.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object EditMinutos: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            KeyboardType = NumberPad
+            TextSettings.Font.Family = 'Calibri'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Size.Width = 212.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = '10'
+            StyledSettings = [FontColor]
+          end
+          object ComboBox1: TComboBox
+            Align = Top
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.Y = 42.000000000000000000
+            Size.Width = 212.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object ListBoxItem1: TListBoxItem
+              TabOrder = 0
+              Text = 'Gato 1'
+            end
+            object ListBoxItem2: TListBoxItem
+              TabOrder = 1
+              Text = 'Gato 2'
+            end
+            object ListBoxItem3: TListBoxItem
+              TabOrder = 2
+              Text = 'Gato 3'
+            end
+            object ListBoxItem4: TListBoxItem
+              TabOrder = 3
+              Text = 'Gato 4'
+            end
+            object ListBoxItem5: TListBoxItem
+              TabOrder = 4
+              Text = 'Gato 5'
+            end
+            object ListBoxItem6: TListBoxItem
+              TabOrder = 5
+              Text = 'Gato 6'
+            end
+            object ListBoxItem7: TListBoxItem
+              TabOrder = 6
+              Text = 'Gato 7'
+            end
+            object ListBoxItem8: TListBoxItem
+              TabOrder = 7
+              Text = 'Raposa'
+            end
+          end
+          object ComboBox2: TComboBox
+            Align = Top
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.Y = 84.000000000000000000
+            Size.Width = 212.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            object optPomodoro: TListBoxItem
+              TabOrder = 0
+              Text = 'Pomodoro'
+            end
+            object optRelaxar: TListBoxItem
+              TabOrder = 1
+              Text = 'Relaxar'
+            end
+            object optMeditar: TListBoxItem
+              TabOrder = 2
+              Text = 'Medita'#231#227'o'
+            end
+          end
+          object ComboBox3: TComboBox
+            Align = Top
+            Margins.Right = 10.000000000000000000
+            Position.Y = 126.000000000000000000
+            Size.Width = 212.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object optSilencio: TListBoxItem
+              TabOrder = 0
+              Text = 'Sil'#234'ncio'
+            end
+            object optPadrao: TListBoxItem
+              TabOrder = 1
+              Text = 'Padr'#227'o'
+            end
+          end
+        end
+      end
+    end
+    object Footer: TLayout
+      Align = Bottom
+      Position.Y = 608.000000000000000000
+      Size.Width = 480.000000000000000000
+      Size.Height = 112.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object btnSair: TSpeedButton
+        Align = Bottom
+        StyledSettings = [Style]
+        Position.Y = 64.000000000000000000
+        Size.Width = 480.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Sair'
+        TextSettings.Font.Family = 'Anja Eliane Nornal'
+        TextSettings.Font.Size = 36.000000000000000000
+        TextSettings.FontColor = claWhite
+        OnClick = btnSairClick
+      end
+    end
+  end
+end

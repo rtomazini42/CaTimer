@@ -1,0 +1,16 @@
+program CatImer;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Main in '..\Units\Main.pas' {Inicio},
+  Contador in '..\Units\Contador.pas' {Contagem};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TInicio, Inicio);
+  Application.CreateForm(TContagem, Contagem);
+  Application.Run;
+end.

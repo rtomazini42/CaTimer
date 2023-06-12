@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/06/11 15:12:46.580,=D:\Users\Tomazini\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/06/11 15:19:24.826,C:\Users\Tomazini\Desktop\CatTimer\Units\Unit1.fmx=D:\Users\Tomazini\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2023/06/11 15:19:24.826,C:\Users\Tomazini\Desktop\CatTimer\Units\Unit1.pas=D:\Users\Tomazini\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/06/11 15:19:33.039,C:\Users\Tomazini\Desktop\CatTimer\Units\Main.pas=C:\Users\Tomazini\Desktop\CatTimer\Units\Unit1.pas</Transaction>
+    <Transaction>2023/06/11 15:19:33.039,C:\Users\Tomazini\Desktop\CatTimer\Units\Main.fmx=C:\Users\Tomazini\Desktop\CatTimer\Units\Unit1.fmx</Transaction>
+    <Transaction>2023/06/11 15:36:28.226,C:\Users\Tomazini\Desktop\CatTimer\Projeto\CatImer.dproj=D:\Users\Tomazini\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2023/06/11 19:17:17.062,=C:\Users\Tomazini\Desktop\CatTimer\Projeto\Unit2.pas</Transaction>
+    <Transaction>2023/06/11 19:40:49.270,C:\Users\Tomazini\Desktop\CatTimer\Units\Contador.fmx=C:\Users\Tomazini\Desktop\CatTimer\Projeto\Unit2.fmx</Transaction>
+    <Transaction>2023/06/11 19:40:49.270,C:\Users\Tomazini\Desktop\CatTimer\Units\Contador.pas=C:\Users\Tomazini\Desktop\CatTimer\Projeto\Unit2.pas</Transaction>
+    <Transaction>2023/06/11 22:21:19.924,=C:\Users\Tomazini\Desktop\CatTimer\Assets\Icons\config.png</Transaction>
+    <Transaction>2023/06/11 22:21:19.962,=C:\Users\Tomazini\Desktop\CatTimer\Assets\Icons\pause.png</Transaction>
+    <Transaction>2023/06/11 22:21:19.986,=C:\Users\Tomazini\Desktop\CatTimer\Assets\Icons\play.png</Transaction>
+    <Transaction>2023/06/11 22:21:20.013,=C:\Users\Tomazini\Desktop\CatTimer\Assets\Icons\sair.png</Transaction>
+    <Transaction>2023/06/11 22:21:20.067,=C:\Users\Tomazini\Desktop\CatTimer\Assets\Icons\sound.png</Transaction>
+    <Transaction>2023/06/11 22:21:20.100,=C:\Users\Tomazini\Desktop\CatTimer\Assets\Icons\sound_off.png</Transaction>
+  </Transactions>
+</BorlandProject>
